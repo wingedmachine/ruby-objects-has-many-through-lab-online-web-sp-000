@@ -3,7 +3,7 @@ class Artist
 
   ARTISTS = []
   def all
-    ARTISTS
+    ARTISTS.dup.freeze
   end
 
   def initialize(name)
