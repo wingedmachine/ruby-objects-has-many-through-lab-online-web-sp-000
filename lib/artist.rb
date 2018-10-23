@@ -2,7 +2,7 @@ class Artist
   attr_reader :name
 
   ARTISTS = []
-  def all
+  def self.all
     ARTISTS.dup.freeze
   end
 
