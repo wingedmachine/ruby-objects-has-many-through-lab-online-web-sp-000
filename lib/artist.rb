@@ -18,4 +18,8 @@ class Artist
     song.add_artist(self)
     song
   end
+
+  def genres
+    @songs.map { |song| song.genre }.uniq
+  end
 end
